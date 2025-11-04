@@ -1,0 +1,23 @@
+{
+  "name": "taco-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "docs:dev:tacozip": "vitepress dev tacozip --port 5173",
+    "docs:dev:tacoreader": "vitepress dev tacoreader --port 5174",
+    "docs:dev:tacotoolbox": "vitepress dev tacotoolbox --port 5175",
+    "docs:build:tacozip": "vitepress build tacozip",
+    "docs:build:tacoreader": "vitepress build tacoreader",
+    "docs:build:tacotoolbox": "vitepress build tacotoolbox",
+    "docs:build:all": "npm run docs:build:tacozip && npm run docs:build:tacoreader && npm run docs:build:tacotoolbox",
+    "docs:preview:tacozip": "vitepress preview tacozip"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "highlight.js": "^11.11.1"
+  }
+}
